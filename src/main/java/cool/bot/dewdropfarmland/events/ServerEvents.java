@@ -29,12 +29,14 @@ public class ServerEvents {
                     if (clickedBlockState.getBlock() instanceof ChainBlock) {
                         if (!event.getLevel().isClientSide) {
                             event.getLevel().setBlock(blockPos.below().below(), ModElements.IRON_HANGING_GARDEN_POT.get().defaultBlockState(), 3);
+                            stack.shrink(1);
                         }
                         event.setCanceled(true);
                         event.setCancellationResult(InteractionResult.SUCCESS);
                     } else if (DewDropFarmland.FARMERS_DELIGHT_INSTALLED && clickedBlockState.is(ModTags.ROPES)) {
                         if (!event.getLevel().isClientSide) {
                             event.getLevel().setBlock(blockPos.below().below(), ModElements.ROPE_HANGING_GARDEN_POT.get().defaultBlockState(), 3);
+                            stack.shrink(1);
                         }
                         event.setCanceled(true);
                         event.setCancellationResult(InteractionResult.SUCCESS);

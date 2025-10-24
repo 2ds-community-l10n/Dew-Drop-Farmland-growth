@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dew_drop_farmland_growth:high_quality_fertilized_farmland",
-    "dew_drop_farmland_growth:high_quality_fertilized_sand",
+    "dew_drop_farmland_growth:high_quality_fertilized_farmland"
     { "id": "farmersdelight:rich_soil", "required": false }
   ]
 }
